@@ -1,3 +1,4 @@
+import 'package:fiverr/landing_ad.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -8,29 +9,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Fiverr Gig Images',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Fiverr Gig Images'),
+      theme: ThemeData(fontFamily: 'AmericanCaptain'),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: SizedBox(
-          height: 800,
+          height: 900,
           child: Center(
-            child: SizedBox(
-                height: 769, width: 1280, child: Container(color: Colors.red)),
+            child: SizedBox(height: 845, width: 1280, child: LandingAd()),
           ),
         ),
       ),
