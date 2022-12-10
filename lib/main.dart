@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
         child: SizedBox(
           height: 900,
           child: Center(
-            child: SizedBox(height: 845, width: 1280, child: LandingAd()),
+            child: SizedBox(height: 835, width: 1280, child: LandingAd()),
           ),
         ),
       ),

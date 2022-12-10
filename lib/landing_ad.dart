@@ -69,14 +69,14 @@ class LandingAd extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 160,
                       color: Colors.white,
-                      shadows: [Shadow(blurRadius: 4)]),
+                      shadows: [Shadow(blurRadius: 8)]),
                 ),
                 Text(
                   "AMERICAN",
                   style: TextStyle(
                       fontSize: 200,
                       color: Colors.white,
-                      shadows: [Shadow(blurRadius: 4)]),
+                      shadows: [Shadow(blurRadius: 8)]),
                 ),
               ],
             )),
@@ -88,26 +88,26 @@ class LandingAd extends StatelessWidget {
             style: TextStyle(
                 fontSize: 130,
                 color: Colors.white,
-                shadows: [Shadow(blurRadius: 4)]),
+                shadows: [Shadow(blurRadius: 8)]),
           ),
         ),
         const Positioned(
           bottom: -40,
-          left: 180,
+          left: 200,
           child: Text("APPS",
               style: TextStyle(
-                  fontSize: 540,
+                  fontSize: 520,
                   color: Colors.white,
-                  shadows: [Shadow(color: Colors.black, blurRadius: 15)])),
+                  shadows: [Shadow(color: Colors.black, blurRadius: 25)])),
         ),
         const Positioned(
-          bottom: 0,
-          left: 380,
+          bottom: -10,
+          left: 300,
           child: Text("STARTING AT \$195",
               style: TextStyle(
-                  fontSize: 60,
+                  fontSize: 80,
                   color: Colors.white,
-                  shadows: [Shadow(color: Colors.black, blurRadius: 4)])),
+                  shadows: [Shadow(color: Colors.black, blurRadius: 8)])),
         ),
         const Positioned(bottom: 8, right: 16, child: MadeWithFlutter()),
         const Positioned(right: 300, bottom: 8, child: HabloEspanol()),
